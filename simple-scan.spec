@@ -1,11 +1,11 @@
 Summary:	Simple scanning utility
 Name:		simple-scan
-Version:	3.6.0
+Version:	3.8.0
 Release:	1
 License:	GPL v3+
 Group:		Applications/Multimedia
-Source0:	https://launchpad.net/simple-scan/3.6/%{version}/+download/%{name}-%{version}.tar.gz
-# Source0-md5:	163a3efeeb7cb32a3df2e87cc5c44fcf
+Source0:	https://launchpad.net/simple-scan/3.8/%{version}/+download/%{name}-%{version}.tar.xz
+# Source0-md5:	6a974b3cffc6e9b0ee87b7aa5caa12ac
 URL:		https://launchpad.net/simple-scan
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS README ChangeLog
+%doc README.md NEWS
 %attr(755,root,root) %{_bindir}/simple-scan
 %{_mandir}/man1/simple-scan.1*
 %{_desktopdir}/simple-scan.desktop
