@@ -1,7 +1,7 @@
 Summary:	Simple scanning utility
 Name:		simple-scan
 Version:	3.10.0
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		Applications/Multimedia
 Source0:	https://launchpad.net/simple-scan/3.10/%{version}/+download/%{name}-%{version}.tar.xz
@@ -48,6 +48,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/{mhr,sd}
 
 %find_lang %{name} --with-gnome
 
