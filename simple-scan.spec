@@ -1,18 +1,17 @@
 Summary:	Simple scanning utility
 Name:		simple-scan
-Version:	3.10.2
+Version:	3.12.0
 Release:	1
 License:	GPL v3+
 Group:		Applications/Multimedia
-Source0:	https://launchpad.net/simple-scan/3.10/%{version}/+download/%{name}-%{version}.tar.xz
-# Source0-md5:	830bb30568aac669d26433e7b363baea
+Source0:	https://launchpad.net/simple-scan/3.12/%{version}/+download/%{name}-%{version}.tar.xz
+# Source0-md5:	24ae06b11368320e85fb32b98d6919f3
 URL:		https://launchpad.net/simple-scan
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cairo-devel
 BuildRequires:	colord-devel
 BuildRequires:	gettext-devel
-BuildRequires:	gnome-doc-utils
 BuildRequires:	gtk+3-devel
 BuildRequires:	intltool
 BuildRequires:	pkg-config
